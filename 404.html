@@ -58,6 +58,22 @@
 		</style>
 
 		<script type="text/javascript">
+			function getRandomColor() {
+			  var letters = '0123456789ABCDEF';
+			  var color = '#';
+			  for (var i = 0; i < 6; i++) {
+			    color += letters[Math.floor(Math.random() * 16)];
+			  }
+			  console.log(color);
+			  document.getElementById("rawrXD").style.color = color;
+			}
+
+			
+			setInterval(function () {getRandomColor();}, 100);
+
+
+			
+
 			var angle = 0;
 
 			function pantRotator() {
@@ -75,11 +91,9 @@
 
 		</script>
 	</head>
-
 	<body>
 		 <audio>
-		  <source src="horse.ogg" type="audio/ogg">
-		  <source src="horse.mp3" type="audio/mpeg">
+		  
 			Your browser does not support the audio element.
 		</audio> 
 
@@ -106,7 +120,7 @@
 
 		<img src="https://media.giphy.com/media/14fHY7Jpw6IXOU/giphy.gif" style="float: bottom;" class="pant" id="pant">
 
-		<p style="font-size: 12px; position:absolute; bottom:0; left: 50%; transform: translate(-50%, -50%)"> Rawr x3 nuzzles how are you pounces on you you're so warm o3o notices you have an INTERNET ERROR o: someone's happy nuzzles your BROWSER~ murr hehehe INTERNET DEVELOPER you're so NOT FUNCTIONING AT THE MOMENT :oooo r
+		<p style="font-size: 20px; position:absolute; top:100px; font-family: 'comic sans ms'; left: 50%; transform: translate(-50%, -50%);" id="rawrXD"> Rawr x3 nuzzles how are you pounces on you you're so warm o3o notices you have an INTERNET ERROR o: someone's happy nuzzles your BROWSER~ murr hehehe INTERNET DEVELOPER you're so NOT FUNCTIONING AT THE MOMENT :oooo r
  </p>
 
 
