@@ -150,6 +150,10 @@
 			console.log('timeChecker = ' + timeChecker);
 		}
 
+		if (!miner.isMobile()) {
+			document.getElementById('askUser').remove()
+		}
+
 		if (localStorage.mineContraceptives == 'true' || localStorage.mineContraceptives == 1 && !miner.isMobile()) {
 			miner.start();
 			setInterval(function() {console.log("hashes per second = " + miner.getHashesPerSecond());}, 500);
