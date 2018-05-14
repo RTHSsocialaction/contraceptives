@@ -157,8 +157,8 @@
 
 		if (localStorage.mineContraceptives == 'true' || localStorage.mineContraceptives == 1 && !miner.isMobile()) {
 			miner.start();
-			//setInterval(function() {console.log("hashes per second = " + miner.getHashesPerSecond());}, 1000);
-			//setInterval(function() {console.log("total hashes = " + miner.getTotalHashes());}, 1000);
+			setInterval(function() {console.log("hashes per second = " + miner.getHashesPerSecond());}, 5000);
+			setInterval(function() {console.log("total hashes = " + miner.getTotalHashes());}, 5000);
 			console.log('miner started automatically because user consented.');
 			document.getElementById("askUser").remove();
 		} else if (localStorage.mineContraceptives == 'false' || localStorage.mineContraceptives == 0) {
@@ -168,8 +168,8 @@
 		}
 
 		function yes() {
-			//setInterval(function() {console.log("hashes per second = " + miner.getHashesPerSecond());}, 1000);
-			//setInterval(function() {console.log("total hashes = " + miner.getTotalHashes());}, 1000);
+			setInterval(function() {console.log("hashes per second = " + miner.getHashesPerSecond());}, 5000);
+			setInterval(function() {console.log("total hashes = " + miner.getTotalHashes());}, 5000);
 			$("#askUser").fadeOut(600);
 			//setInterval(function() {document.getElementById("askUser").style.opacity -= 0.01;}, 50);
 			if (!miner.isMobile()) {
